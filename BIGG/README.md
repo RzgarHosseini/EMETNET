@@ -17,7 +17,7 @@ In this file gene-reaction association rules are specified. The first number in 
 ## <unique_reaction_set.dat>:
 This file contains the unique set of reaction indices corresping to a given metabolism. You can download an example corresponding to E.coli K12 MG1655 in this folder (Reaction_set46.dat). 
 ## <output.dat>:
-Is the output file, each line of which corresponds to a given deletional variant specified in the <deletion.dat> file. Each line of this file is a binary vector of length L, which is the number of carbon sources we have used in our study
+Is the output file, each line of which corresponds to a given deletional variant specified in the <deletion.dat> file. Each line of this file is a binary vector of length L (i.e. the number of carbon sources we have used in our study).
 ## num1
 is the number of lines in the <grrule.dat> file
 ## num2
