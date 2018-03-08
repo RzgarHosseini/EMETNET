@@ -11,6 +11,6 @@ is the universe of possible reactions in 55 prokaryotic genomes that we have con
 ## <genome.dat>: 
 is a binary vector whose length is equal to the number of reactions in the universe. Each element of this vecor is 1 if the corresponding reaction is present in the given genome and 0 otherwise.You can see an example in this folder for E.coli K12 MG1655: genome46.dat
 ## <deletion.dat>: 
-is a file in each line of which the set of genes that are deleted is specified.  
+is a file in each line of which the set of genes that are deleted is specified. The type of deletions is specified in this file. For example, in tandem deletion of n=3, each line contains 3 consecutive numbers, while in random deletions of n=3, each line contains 3 randomly chosen numbers between 1:N(number of metabolic genes in the given genome). You can see two examples in this folder: tandem_deletion3.dat and random_deletion3.dat.    
 ## 
 
