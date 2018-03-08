@@ -27,6 +27,7 @@ is the name of the file(s) corresponding to minimal environment(s) with a given 
 
 # Example:
 In this example, we run this program twice to determine the tandem and random robustness to deletion of 3 metabolic genes in E.coli K12 MG1655:
+
 i) tandem deletion:
 BIGG_deletion_phenotyping  universe46.net genome46.dat tandem_deletion3.dat grrule46.dat Reaction_set46.dat tandem3_phenotype.dat --num1 3900 --num2 2572 ENVS/*
 
