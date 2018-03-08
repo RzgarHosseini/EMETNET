@@ -55,14 +55,12 @@ enet net;
 erandomWalk *prw=0x00;
 int num1=-1;//length of grrule.dat file
 int num2=-1;//length of unique_reaction_set.dat file
-int num3=-1;//index of the carbon source
 
 int emain()
-{ ldieif(argvc<4,"syntax: ./BIGG_deletion_phenotyping  <universe.net> <genome.dat> <deletion.dat> <grrule.dat> <unique_reaction_set.dat> <output.dat> --num1 --num2 --num3 <fluxbounds.flx>"); 
+{ ldieif(argvc<4,"syntax: ./BIGG_deletion_phenotyping  <universe.net> <genome.dat> <deletion.dat> <grrule.dat> <unique_reaction_set.dat> <output.dat> --num1 --num2 <fluxbounds.flx>"); 
 ////////////// ARGUMENTS /////////////////////////
   epregister(num1);
   epregister(num2);
-  epregister(num3);
   eparseArgs(argvc,argv);
 
 ////////////// Universe loading //////////////////
