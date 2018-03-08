@@ -34,7 +34,7 @@ BIGG_deletion_phenotyping  universe46.net genome46.dat tandem_deletion3.dat grru
 ii) random deletion:
 BIGG_deletion_phenotyping  universe46.net genome46.dat random_deletion3.dat grrule46.dat Reaction_set46.dat random3_phenotype.dat --num1 3900 --num2 2572 ENVS/*
 
-To quantify robustness to tandem deletion of n=3, we check what fraction of the deletional variants (each line of tandem3_phenotype.dat) retains viability on all carbon sources (strict definition) or at least one carbon source (moderate definition) on which the wild-type genome is viable. Similarly, to compute robustness to random deletion of n=3 we can use random3_phenotype.dat.  
+To quantify robustness to tandem deletion of n=3, we check what fraction of the deletional variants (each line of the output file (tandem3_phenotype.dat)) retains viability on all carbon sources (strict definition) or at least one carbon source (moderate definition) on which the wild-type genome is viable. Similarly, to compute robustness to random deletion of n=3 we can use random3_phenotype.dat.  
 
 
 
