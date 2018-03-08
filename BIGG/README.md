@@ -23,7 +23,7 @@ is the number of lines in the <grrule.dat> file
 ## num2
 is the number of lines in <unique_reaction_set.dat> file
 ## <fluxbounds.flx>
-is the name of the file(s) corresponding to minimal environment(s) with a given carbon source. In the subfolder ENVS you can see 101 different minimal environments with distinct carbon sources.
+is the name of the file(s) corresponding to minimal environment(s) with a given carbon source. In the subfolder ENVS you can see 100 different minimal environments with distinct carbon sources.
 
 # Example:
 In this example, we run this program twice to determine the tandem and random robustness to deletion of 3 metabolic genes in E.coli K12 MG1655:
