@@ -4,7 +4,7 @@ Please see the README file in https://github.com/RzgarHosseini/EMETNET/blob/mast
 # BIGG_deletion_phenotyping.cpp:
 This is the program that I used to compute the deletional robustness of bacterial genomes.
 The syntax of the program is as follows:
-BIGG_deletion_phenotyping  <universe.net> <genome.dat> <deletion.dat> <grrule.dat> <unique_reaction_set.dat> <output.dat> --num1 --num2 --num3 <fluxbounds.flx>
+BIGG_deletion_phenotyping  <universe.net> <genome.dat> <deletion.dat> <grrule.dat> <unique_reaction_set.dat> <output.dat> --num1 --num2  <fluxbounds.flx>
 where:
 ## <universe.net>: 
 is the universe of possible reactions in 55 prokaryotic genomes that we have considered. You can see an example in this folder : universe46.net
@@ -23,10 +23,17 @@ is the number of lines in the <grrule.dat> file
 ## num2
 is the number of lines in <unique_reaction_set.dat> file
 ## <fluxbounds.flx>
-is the name of the file(s) corresponding to minimal environment(s) with a given carbon source. In the subfolder ENVS you can see 138 different minimal environments with distinct carbon source.
+is the name of the file(s) corresponding to minimal environment(s) with a given carbon source. In the subfolder ENVS you can see 101 different minimal environments with distinct carbon sources.
 
 # Example:
+In this example, we run this program twice to determine the tandem and random robustness to deletion of 3 metabolic genes in E.coli K12 MG1655:
+i) tandem deletion:
+BIGG_deletion_phenotyping  universe46.net genome46.dat tandem_deletion3.dat grrule46.dat Reaction_set46.dat tandem3_phenotype.dat --num1 3900 --num2 2572 ENVS/*
 
+ii) random deletion:
+BIGG_deletion_phenotyping  universe46.net genome46.dat random_deletion3.dat grrule46.dat Reaction_set46.dat random3_phenotype.dat --num1 3900 --num2 2572 ENVS/*
+
+To quantify robustness to tandem deletion of n=3, we check what fraction of the deletional variants (each line of tandem3_phenotype.dat) retains viability on all carbon sources (strict definition) or at least one carbon source (moderate definition) on which the wild-type genome is viable. Similarly, to compute robustness to random deletion of n=3 we can use random3_phenotype.dat.  
 
 
 
